@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Score Keeper</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="container text-center bg-primary-subtle text-success-emphasis mt-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+      id="overall"
+    >
+      <h1 class="text-success-emphasis border-bottom border-dark-subtle">
+        Welcome to Football Score Keeper!
+      </h1>
+      <img class="mt-2" src="football-enfant-1200x800.jpg" alt="football" />
+      <h2 class="p-3 border-bottom border-dark-subtle">
+        <span id="p1">0</span> to <span id="p2">0</span>
+      </h2>
+
+      <button id="p1Button" class="btn btn-outline-success m-1 p-3">
+        +1 Player One
+      </button>
+      <button id="p2Button" class="btn btn-outline-primary m-1 p-3">
+        +1 Player Two
+      </button>
+      <button id="resetButton" class="btn btn-outline-danger m-1 p-3">
+        Reset
+      </button>
+      <p class="text-success-emphasis">Use the buttons to keep score</p>
+      <div class="" id="selection">
+        <p class="pt-2 text-success-emphasis">Playing to</p>
+        <div class="">
+          <select
+            class="m-3 form-select text-success-emphasis"
+            name=""
+            id="playto"
+          >
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
